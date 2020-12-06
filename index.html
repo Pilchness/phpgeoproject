@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Geographical APIs</title>
+    <meta name="description" content="Geographical APIs" />
+    <meta name="author" content="Richard Barnes" />
+  </head>
+
+  <body>
+    <div id="divAPIs">
+      <table>
+        <caption>
+          Three Interesting Geographical APIs
+        </caption>
+
+        <tr>
+          <th scope="col">API Name</th>
+          <th scope="col">API Description</th>
+        </tr>
+        <tr>
+          <td>1. Neighbouring Countries</td>
+          <td>Choose a country and get a list of neighbouring countries.</td>
+          <td>
+            <select id="country">
+              <option value="AN">Andorra</option>
+              <option value="AL">Albania</option>
+              <option value="AT">Austria</option>
+              <option value="BE">Belgium</option>
+              <option value="FI">Finland</option>
+              <option value="FR">France</option>
+              <option value="NO">Norway</option>
+              <option value="LI">Liechtenstein</option>
+              <option value="GB">Great Britain</option>
+            </select>
+          </td>
+          <td><button id="api1">Find neighbouring countries</button></td>
+        </tr>
+
+        <tr>
+          <td>2. UK Postal Code Search</td>
+          <td>Enter a UK postcode to find its location.</td>
+          <td>
+            <input id="inpPostcode" type="text" />
+          </td>
+          <td><button id="api2">Search for my postcode</button></td>
+        </tr>
+
+        <tr>
+          <td>3. GMT-US Time Differernce</td>
+          <td>Choose a US state to get the time difference</td>
+          <td>
+            <select id="state">
+              <option value="64,-149">Alaska</option>
+              <option value="39,-75">Delaware</option>
+              <option value="38,-98">Kansas</option>
+              <option value="33,-90">Mississippi</option>
+              <option value="44,-120">Oregon</option>
+              <option value="31,-100">Texas</option>
+              <option value="47,-120">Washington</option>
+            </select>
+          </td>
+          <td><button id="api3">Find time difference</button></td>
+        </tr>
+        <tr>
+          <td id="results"></td>
+        </tr>
+      </table>
+    </div>
+
+    <script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+    <script type="application/javascript" src="libs/js/script.js"></script>
+  </body>
+</html>
